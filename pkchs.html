@@ -1,610 +1,142 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Video Background</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <title>Pkchs</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="try5.css">
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-    * {
-        font-family:"Roboto", sans-serif;;
-        color: rgba(255, 255, 255, 0.824);
-        list-style: none;
-        letter-spacing: 0.5px;
-    }
-    body, html {
-        background-blend-mode: luminosity;
-        background-color: rgb(93 0 0);
-        width: 88%;
-        margin-left: 5.5%;
-    }
-    .container {
-        margin: auto;
-        text-align: center;
-        padding-top: 269px;
-        padding-bottom: 80px; 
-    }
-    @media screen and (max-width: 760px) {
-        .container {
-            font-size: 36px;
-            text-align: center;
-            margin-bottom: 1px;
-            margin-top: -5%;
-            margin-left: -21%;
-        } 
-        .services{
-            margin-top: -35%;
-        }
-        .section-title{
-            font-size: 36px;
-            text-align: center;
-            margin-bottom: -153px;
-            margin-left: -62%;
-        }  
-        h5 {
-            font-size: 25px;
-        }
-    }
-    .section-title {
-        font-size: 36px;
-        text-align: center;
-        margin-bottom: -117px;
-    }
-    h5 {
-        font-size: 30px;
-        margin: 19px;
-    }
-    p {
-        font-size: 14px;
-        color: #ffffff;
-        font-weight: 400;
-        line-height: 32px;
-
-    }
-    a {
-        text-decoration: none; 
-    }
-    #main-header{
-        width: 41%;
-        position: fixed;
-        top: 7%;
-        left: 73%;
-    }
-    #main-header a{
-        padding: 10px 15px;
-    }
-    #main-header a:hover{
-        color: wheat;
-            transition: 0.5s;
-            font-weight: 700;
-    }
-    .open-nav {
-        max-height: 400px !important; 
-    }
-    .open-nav .mobile-toggle {
-        -webkit-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        transform: rotate(-90deg); 
-    }
-    .logo {
-        font-size: xx-large;
-        color: #ffffff;
-        font-family: serif;
-    }
-    @media screen and (max-width: 760px) {
-        .logo {
-            float: none; 
-        }  
-        #main-header {
-            width: 133%;
-            padding: 31px 0px;
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
             overflow: hidden;
-            position: fixed;
-            margin-left: -11%;
         }
-
-    }
-    #main-header nav {
-        width: 75%;
-        position: relative;
-        left: 70%;
-    }
-    @media screen and (max-width: 760px){
-        #main-header nav{
-            overflow: hidden;
-            margin-left: 0%;
-            display: grid;
-            position: relative;
-        } 
-        #main-header nav a{
-            height: 3px;
-        }
-    }
-    #main-header nav a {
-        color: #ffffff;
-        font-size: 15px;
-        font-weight: 500;
-        padding: 15px;
-        line-height: 1px;
-        position: relative;
-        left: 11%;
-    }
-    #main-header nav a:hover {
-        transition: 0.5s;
-        color: rgba(255, 255, 255, 0.824);
-        font-size: 18px;
-        font-weight: 800;
-    }
-    .header-wrapper {
-        max-width: fit-content;
-        position: relative;
-    }
-    .hero-content {
-        position: absolute;
-        top: 0%;
-        left: 6%;
-        font-size: 27px;
-    }
-    .timetables{
-        font-size: 36px;
-        text-align: center;
-        margin-bottom: 50px; 
-    }
-    h1:hover {
-        color: rgba(255, 255, 255, 0.824);
-    }
-    .skill-bar {
-        position: relative;
-        width: 100%;
-        height: 2px;
-        margin-top: 52px;
-        background: #00000026;
-        text-align: center;   
-    }
-    ul {
-        font-size: large;
-        text-align: center;
-        line-height: 55px;
-        padding-top: 5%;
-    }
-    input{
-        color: white;
-        border: none;
-        outline: none;
-        background: rgb(0 0 0);
-        padding: 14px 36px;
-        font-size: medium;
-        border-radius: 41px;
-        margin-top: 11%;
-
-    }
-    button{
-        margin-left: -8%;
-        background: none;
-        margin-top: -7.5%;
-        border: none;
-    }
-    span{
-        position: relative;
-        left: 6%;
-        font-size: 21px;
-        color: rgba(255, 255, 255, 0.824);
-        font-weight: 700;
-        cursor: pointer;
-    }
-    i{
-        position: relative;
-        left: 4%;
-    }
-    .section-titles{
-        margin-bottom: -25%;
-        font-size: xxx-large;
-        padding-left: 45%;
-        text-decoration: underline;
-    }
-    .containers {
-        font-size: 23px;
-        margin-left: 1%;
-        line-height: 44px;
-        text-align: center;
-    } 
-    .timedate{
-        font-size: 37px;
-        position: fixed;
-        left: 45.5%;
-        z-index: 1001;
-        font-weight: 400;
-    }
-    @media screen and (max-width: 760px) {
         body{
-            margin-left: 15.5%;
+            background-color: black;
         }
-        .timedate{
-            font-size: 37px;
+        .world {
             position: fixed;
-            z-index: 1001;
-            font-weight: 400;
-            background: black;
-            width: 100%;
-            right: 0;
-            text-align: center;
+            top: 0;
             left: 0;
-        }
-        #main-header nav ul li {
             width: 100%;
-            padding: 10px 0;
-            margin: 0; 
-        } 
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+            border: none;
+        }
+        video {
+            width: 115%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
         button{
-            width: 77%;
-            position: relative;
-            left: 3%;
-            margin-top: 5%;
-            padding: 21px;
-            background: rgba(255, 255, 255, 0);
-        }  
-        span{
-            position: static;
-            padding-left: 8%;
-        }
-        ul{
-            display: inline;
-            position: static;
-            font-size: large;
-            float: inherit;
-            line-height: 41px;
-        }
-        .containers {
-            font-size: 36px;
-            text-align: center;
-            margin-bottom: 1px;
-            margin-top: 16%;
-            margin-left: -21%;
-        } 
-        .section-titles{
-            padding-left: 6%;
-            text-decoration: none;
-            font-size: 42px;
-            margin-top: 72%;
-            margin-bottom: -92%;
-        }
-        .containers a:hover{
-            color: rgba(255, 255, 255, 0.824);
-        }
-        botton{
+            padding: 5px 15px;
+            background: #ffffff70;
             color: white;
             border: none;
-            outline: none;
-            background: rgb(51 51 51);
-            padding: 18px 21px;
-            font-size: medium;
-            border-radius: 13px;
-            margin: 20px -30px;
+            border-radius: 50px;
         }
-        .menubar{
-            position: fixed;
-            left: -4%;
-            width: 103%;
-            top: 92%;
-            text-align: center;
-            background: black;
-            padding: 20px 11px;
-            border: solid 1px white;
-            height: 35%;
+        .btn1{
+            margin-left: 47%;
+            margin-top: 48%;
         }
-        .menubar a{
-            font-size: 16px;
-            color: rgb(255, 255, 255);
-        }   
-    }
-    @media screen and (max-width: 760px) {
-        #main-header {
-            margin-left: -29%;
-            padding-top: 41%;
-        } 
-    }
+        @media screen and (max-width: 760px) {
+            .btn1{
+                margin-left: 42%;
+                margin-top: 99%;
+            }
+            video {
+                width: 204%;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .btn1{
+                margin-left: 40%;
+                margin-top: 156%;
+            }
+            /* .btn2{
+                margin-left: 50%;
+                margin-top: 729%;
+            } */
+            video {
+                width: 353%;;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- <div class="hero-content">
-        <h1 style="color: rgba(255, 255, 255, 0.824);font-size: 39px; font-weight: 600;">Pkchs <i class="fa-solid fa-people-pulling"style="color: rgba(255, 255, 255, 0.824); font-size: 30px;"></i></h1>
-    </div> -->
-    <div class="timedate">
-        <p id="datetime" style="color: rgba(255, 255, 255, 0.868)"></p>
+    <div class="world">
+        <video autoplay loop muted src="bg.mp4"></video>
     </div>
+    <div id="player"></div>
+    <div class="button-container">
+        <button class="btn1" id="playPauseBtn" onclick="togglePlayPause()"><i class="fa-solid fa-music"></i></button>
+        <button class="btn2" id="fullScreenBtn" onclick="toggleFullScreen()"><i class="fa-solid fa-compress"></i></button>
+    </div>
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script>
-        function updateTime() {
-            var today = new Date();
-            var options = { 
-                day: 'numeric',
-                month: 'short',
-                weekday: 'short',
-                hour: 'numeric',
-                minute: 'numeric',
-                hour12: true 
-            };
-            var dateTime = today.toLocaleDateString(undefined, options);
-            document.getElementById('datetime').innerText = dateTime;
-        }
-        setInterval(updateTime, 1000);
-        updateTime();
-    </script>
+        var player;
 
-
-
-
-    <header id="main-header">
-        <div class="header-wrapper">
-            <div class="menubar">
-                <a id="#note-link" href="#notes">Note </a>
-                <a id="#about-link" href="#about">Time </a>
-                <a id="#services-link" href="#services">Mess</a>
-                <a id="#sites-link" href="#sites">Sites</a>
-                <!-- <a id="#exam-link" href="#exam">Exam</a> -->
-            </div>
-        </div>
-    </header>
-
-    <section id="notes">
-        <div class="container">
-            <div class="todo">
-                <h1 style="color: rgba(255, 255, 255, 0.824);;font-size: 30px; font-weight: 600;margin-left: 2%; margin-bottom: -7%;">Notepad </h1>
-                <div class="search">
-                    <input type="text" id="search-bar" placeholder="Enter the note here.....">
-                    <button onclick="addTask()">ADD  <i class="fa-solid fa-plus"></button></i>
-                </div>
-                <ul id="list-container"></ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <div class="section-title">
-                <h6>TIME TABLE</h6><br><br>
-            </div>
-                
-                <div class="skill-progress-container">
-                        <hr>
-                    <p><h5 style="color: wheat;;">Monday</h5></p><hr>
-                    <p>09:00 am - 11:00 am - <br>ISES (S606)</p>
-                    <p>11:01 am - 12:00 pm - <br>OE</P>
-                    <p>03:31 pm - 05:30 pm - <br>Software Engineering(W402)</P>
-                        <hr>
-                </div>
-
-                <div class="skill-progress-container">
-                    <P><h5 style="color:  wheat;;">Tuesday</h5></P><hr>
-                    <p>09:00 am - 11:00 am - <br>APDS LAB( W403 ) / ML( W208 )</p>
-                    <p>11:01 am - 12:00 pm - <br>Software Engineering(W402)</p>
-                    <p>01:01 pm - 02:00 pm - <br>ISES (S302)</p>
-                    <p>02:01 pm - 04:00 pm - <br>OE </p>
-                        <hr>
-                </div>
-                
-                <div class="skill-progress-container">
-                    <P><h5 style="color:  wheat;;">Wednesday</h5></P><hr>
-                    <p>09:00 am - 11:00 am - <br>Software Engineering Lab (W102)</p>
-                    <p>11:01 am - 12:00 pm - <br>OE</p>
-                    <p>02:01 pm - 03:30 pm - <br>Cloud computing (W502)</p>
-                    <p>03:01 pm - 05:00 pm - <br>APDS( W403 ) /  ML LAB( W016 )<br</p>
-                        <hr>
-                </div>
-                <div class="skill-progress-container">
-                    <P><h5 style="color:  wheat;;">Thursday</h5></P><hr>
-                    <p>09:00 am - 10:30 am - <br>APDS( (S607) ) /  ML LAB( W208 )</p>
-                    <p>10:30 am - 12:00 pm - <br>Cloud computing (W502)</p>
-                    <p>02:01 pm - 04:00 pm - <br>OE</p>
-                    <hr>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <div class="section-title">
-                <h6>MESS MENU</h6><br>
-            </div>
-            
-            <br><div class="skill-progress-container">
-                    <hr>
-                <p>
-                    <h5 style="color: wheat;">Monday</h5></p>
-                    <hr>
-                    <p style="text-decoration: overline;font-weight:600; color:green">BREAKFAST</p>
-                    <P>Idly, Peanut Chutney, Sambar, Bread, Butter, Jam, Tea, Coffee, Milk</P>
-    
-                    <p style="text-decoration: overline;font-weight:600; color:green;">LUNCH</P>
-                    <P >Phulka, Rajma Masala, White Rice, Tomato Drumstick/Cauliflower Curry, Variety Dal (Pappucharu), Curd, Roti Chutney, Fryums, Green Salad</P>
-                    
-                    <p style="text-decoration: overline;font-weight:600; color:green;">SNACKS</P>
-                    <P>Boiled wheat Channa with Onion Chopped & Tadka, Tea, Coffee, Milk</P>
-                    
-                    <p style="text-decoration: overline;font-weight:600; color:green;">DINNER</p>
-                    <P>Phulka, Egg Masala, Channa Masala, White Rice, Sambar, South Type Vegetable Curry, Buttermilk, Banana</P>
-                    <hr>
-                </div>
-    
-                <div class="skill-progress-container">
-                    <P><h5 style="color: wheat;">Tuesday</h5></P>
-                    <hr>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">BREAKFAST</p><p>Potato Wheat Paratha, Curd, Pickle, Boiled Egg, Bread, Butter, Jam, Tea, Coffee, Milk</p>                
-                    <p style="text-decoration: overline;font-weight:600; color:green;">LUNCH</P><p>Phulka, Methi Chaman, White Rice, Sambar, Vegetable South Curry, Curd, Roti Chutney, Fryums</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">SNACKS</P><p>Punugu, Chutney,Tea, Coffee, Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">DINNER</p><p>Poori, Mixed Vegetable, Podina Rice, Raita, Butter Milk, Ice Cream</p>
-                    <hr>
-                </div>
-                
-                <div class="skill-progress-container">
-                    <P><h5 style="color: wheat;">Wednesday</h5></P>
-                    <hr>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">BREAKFAST</p><p>Vada, Hot Pongal, Chutney, Sambar, Bread, Butter, Jam, Tea, Coffee, Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">LUNCH</P><p>Phulka, Kadai Vegetable, White Rice, Tomato Dal, Cabbage Peas Curry, Rasam, Curd, Roti Chutney, Fryums, Green Salad</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">SNACKS</P><p>Boiled Masala Corn,
-                        Tea, Coffee, Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">DINNER</p><p>Phulka, Paneer Butter Masala, Andra Chicken Curry, White rice, Rasam, Buttermilk</p>
-                    <hr>
-                </div>
-                <div class="skill-progress-container">
-                    <P><h5 style="color: wheat;">Thursday</h5></P>
-                    <hr>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">BREAKFAST</p><p>Chole Poori, Channa Masala, Bread, Butter, Jam, Tea, Coffee, Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">LUNCH</P><p>Phulka, Dal Tadka, White rice, Spinach Moong Dal (Keerai Kootu), Sambar, Cabbage -65, Curd, Roti Chutney, Fryums</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">SNACKS</P><p>Green Banana Bajji/ Onion Pakoda, Chutney, Tea, Coffee, Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">DINNER</p><p>Phulka, Navarathan Korma (Mix veg Curry) White Rice, Sambar, Potato Kara Curry, Buttermilk, Banana</p>
-                    <hr>
-                </div>
-                <div class="skill-progress-container">
-                    <P><h5 style="color: wheat;">Friday</h5></P>
-                    <hr>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">BREAKFAST</p><p>Rava Kitchadi, Chutney, Egg Omelette, Bread, Butter, Jam, Tea, Coffee, Milk.</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">LUNCH</P><p>Pulka, Green Peas Masala, White rice, Tindly Peanut Fry (Dondakaya), Mor Kuzhambu (Dahee ka Soop), Rasam, Curd, Roti Chutney, Fryums, Green Salad</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">SNACKS</P><p>Peanut/White Channa Sundal, Tea, Coffe & Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">DINNER</p><p>Phulka, Kadai Paneer, North Indian Style, Chicken Curry, White rice, Rasam, Buttermilk</p>
-                    <hr>
-                </div>
-                <div class="skill-progress-container">
-                    <P><h5 style="color: wheat;">Saturday</h5></P>
-                    <hr>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">BREAKFAST</p><p>Plain Paratha (Wheat), Dum Potato Curry, Bread, Butter Jam, Tea, Coffee, Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">LUNCH</P><p>Phulka, Mix Veg. Curry, White Rice, Variety of Dal (Mudda Pappu), Ghee, Lady Finger (Bendi) Peanut Fry, Sweet Pongal/Rava Kesari, Curd, Mango Pickle (Avakaya), Fryums</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">SNACKS</P><p>Potato Samosa, Sauce, Tea, Coffee, Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">DINNER</p><p>Phulka, Dal Makhani, Tomato Rice, Raita,Buttermilk, Banana</p>
-                    <hr>
-                </div>
-                <div class="skill-progress-container">
-                    <P><h5 style="color: wheat;">Sunday</h5></P>
-                    <hr>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">BREAKFAST</p><p>Set Dosa (Uttappam), Potato Masala, Groudnut Chutney, Sambar, Bread, Butter, Jam, Tea, Coffee & Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">LUNCH</P><p>Chicken Biryani, Veg-Biryani, Raita, Veg. Gravy, Onion & Lemon</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">SNACKS</P><p>Muffin (Eggless), Tea, Coffee, Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:green;">DINNER</p><p>Phulka, Vegetables Kofta Curry, Bisibelabath (Sambar Rice), Fryums, Buttermilk, Semiya Payasam</p>
-                    <hr>
-                </div>
-        </div>
-    </section>
-
-    <section id="sites">
-        <div class="containers">
-            <div class="section-title">
-                <h6>MAIN SITES</h6><br><br>
-            </div>
-            <div class="skill-progress-container">
-                <hr>
-                <P><h5 style="color: wheat;">All sites</h5></P>
-                    <hr>
-                <a id="#" target="_blank" href="https://student.srmap.edu.in/srmapstudentcorner/StudentLoginPage" style="font-size: 25px;font-weight: 600;color:white">Portal</a><br>
-                <a id="#" target="_blank" href="https://swayamopenid.b2clogin.com/swayamopenid.onmicrosoft.com/B2C_1_swayam2/oauth2/v2.0/authorize?response_type=code&client_id=bf9d75c0-a6d0-4ab0-9e9a-054d24e2fea4&rgb(218, 0, 0)irect_uri=https%3A%2F%2Fonlinecourses.nptel.ac.in%2Fwso_ok&scope=https%3A%2F%2Fswayamopenid.onmicrosoft.com%2Fapi%2Fuser_impersonation+offline_access+openid&state=LP0Do1iCpnVdZZOSDCOjl2ScmvlqOM&access_type=authorization_code"  style="font-size: 25px;font-weight: 600;color:white">Swayam</a><br>
-                <a id="#" target="_blank" href="https://classroom.google.com/u/0/h"  style="font-size: 25px;font-weight: 600;color:white">Classroom</a><br>
-                <a id="#" target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"  style="font-size: 25px;font-weight: 600;color:white">Gmail</a><br>
-                <a id="#" target="_blank" href="http://anyhomework.co"  style="font-size: 25px;font-weight: 600;color:white">Swayam answers</a>
-            </di
-            iv>
-        </div>
-    </section>
-    
-    <section id="exam">
-        <div class="container">
-            <div class="section-title">
-                <h6>SEM EXAM</h6><br>
-            </div>
-            <br><div class="skill-progress-container">
-                    <hr>
-                <p><h5 style="color: rgb(2, 143, 0)">Not updated</h5></p><hr>
-                <p></p>
-            </div>
-        </div>
-    </section>
-    <!-- <section id="exam">
-        <div class="container">
-            <div class="section-title">
-                <h6>MID EXAM</h6><br>
-            </div>
-            
-            <br><div class="skill-progress-container"
-                    <hr
-                <p><h5 style="color: rgba(255, 255, 255, 0.824);">04.03(Mon)</h5></p><hr>
-                <p>12.00 PM - 01.00 PM - ISES</p>
-                <p>03:00 PM - 04:00 PM - OE</p
-                    <hr
-            </div>
-
-            <div class="skill-progress-container">
-                <P><h5 style="color: rgba(255, 255, 255, 0.824);">05.03(Tue)</h5></P><hr>
-                <p>12.00 PM -1.00 PM - APPLIED DATA SCIENCE / MACHINE LEARNING</p>
-                <p>03:00 PM - 04:00 PM - OE</p>
-                    <hr
-            </div>
-            
-            <div class="skill-progress-container">
-                <P><h5 style="color: rgba(255, 255, 255, 0.824);">06.03(Wed)</h5></P><hr>
-                <p>12.00 PM -1.00 PM - <br>CLOUD COMPUTING</p
-                    <hr
-            </div>
-            <div class="skill-progress-container">
-                <P><h5 style="color: rgba(255, 255, 255, 0.824);">07.03(Thur)</h5></P><hr>
-                <p>12.00 PM -1.00 PM - SOFTWARE ENGINEERING</p>
-                <p>03:00 PM - 04:00 PM - OE</p>
-                    <hr
-            </div>
-        </div>
-    </section> -->
-    <script>
-        const searchBar = document.getElementById("search-bar");
-        const listcontainer = document.getElementById("list-container");
-
-        function addTask(){
-            if(searchBar.value === ''){
-                alert("You didn't write any note");
-            }
-            else{
-                let li = document.createElement("li")
-                li.innerHTML = searchBar.value;
-                listcontainer.appendChild(li);
-
-                let span = document.createElement("span")
-                span.innerHTML = " x";
-                li.appendChild(span);
-            }
-            searchBar.value="";
-            saveData();
-        }
-
-        listcontainer.addEventListener("click", function(e){
-            /* tick mark checked*/
-            if(e.target.tagName === "LI"){
-                e.target.classList.toggle("checked");
-                saveData();
-            }
-            /* delete */
-            else if(e.target.tagName === "SPAN"){
-                e.target.parentElement.remove();
-                saveData();
-            }
-        });
-
-        function saveData(){
-            /* saves data */
-            localStorage.setItem("data", listcontainer.innerHTML);
-
-        }
-        function showTask(){
-            /* display data */
-            listcontainer.innerHTML = localStorage.getItem("data");
-        }
-        showTask();
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '0',
+                width: '0',
+                videoId: '0Ni00XDSd6E', // Replace with your YouTube video ID
+                events: {
+                    'onReady': onPlayerReady
+                }
             });
-        });
+        }
+
+        function onPlayerReady(event) {
+            document.getElementById('playPauseBtn').addEventListener('click', function() {
+                var playerState = player.getPlayerState();
+                if (playerState == YT.PlayerState.PLAYING) {
+                    player.pauseVideo();
+                } else {
+                    player.playVideo();
+                }
+            });
+        }
+
+        function togglePlayPause() {
+            var playerState = player.getPlayerState();
+            if (playerState == YT.PlayerState.PLAYING) {
+                player.pauseVideo();
+            } else {
+                player.playVideo();
+            }
+        }
+
+        function toggleFullScreen() {
+            var elem = document.documentElement;
+            if (!document.fullscreenElement) {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) { /* Safari */
+                    elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) { /* IE11 */
+                    elem.msRequestFullscreen();
+                }
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                } else if (document.webkitExitFullscreen) { /* Safari */
+                    document.webkitExitFullscreen();
+                } else if (document.msExitFullscreen) { /* IE11 */
+                    document.msExitFullscreen();
+                }
+            }
+        }
     </script>
 </body>
 </html>
