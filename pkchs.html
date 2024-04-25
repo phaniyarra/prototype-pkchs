@@ -11,13 +11,13 @@
      @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     * {
         font-family: "Kanit", sans-serif !important;
-        color: rgba(0, 0, 0, 0.824);
+        color: rgba(255, 255, 255, 0.824);
         list-style: none;
         letter-spacing: 0.5px;
     }
     body, html {
         background-blend-mode: luminosity;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(93 0 0);
         width: 88%;
         margin-left: 5.5%;
     }
@@ -59,7 +59,7 @@
     }
     p {
         font-size: 17px;
-        color: #000000c7;
+        color: #ffffffc7;
         line-height: 32px;
         font-weight: 400;
     }
@@ -75,10 +75,9 @@
     #main-header a{
         padding: 16px 22px;
         font-weight: 600;
-    color: white;
     }
     #main-header a:hover{
-        color: rgb(93, 93, 93);
+        color: wheat;
             transition: 0.5s;
             font-weight: 700;
     }
@@ -192,14 +191,10 @@
 
     }
     button{
+        margin-left: -8%;
         background: none;
-        margin-top: 3.5%;
+        margin-top: -7.5%;
         border: none;
-        color: black;
-        text-align: center;
-        display: flex;
-        left: 49%;
-        position: relative;
     }
     span{
         position: relative;
@@ -266,13 +261,12 @@
             margin: 0; 
         } 
         button{
+            width: 77%;
             position: relative;
-            left: 38%;
+            left: 3%;
             margin-top: 5%;
             padding: 21px;
             background: rgba(255, 255, 255, 0);
-            text-align: center;
-
         }  
         span{
             position: static;
@@ -384,7 +378,7 @@
     <section id="notes">
         <div class="container">
             <div class="todo">
-                <h1 style="color: rgba(0, 0, 0, 0.824);;font-size: 30px; font-weight: 600;margin-left: 2%; margin-bottom: -7%;">Notepad </h1>
+                <h1 style="color: rgba(255, 255, 255, 0.824);;font-size: 30px; font-weight: 600;margin-left: 2%; margin-bottom: -7%;">Notepad </h1>
                 <div class="search">
                     <input type="text" id="search-bar" placeholder="Enter the note here.....">
                     <button onclick="addTask()">ADD  <i class="fa-solid fa-plus"></button></i>
@@ -402,7 +396,7 @@
                 
                 <div class="skill-progress-container">
                         <hr>
-                    <p><h5 style="color: black;;">Monday</h5></p><hr>
+                    <p><h5 style="color: wheat;;">Monday</h5></p><hr>
                     <p>09:00 am - 11:00 am - <br>ISES (S606)</p>
                     <p>11:01 am - 12:00 pm - <br>OE</P>
                     <p>03:31 pm - 05:30 pm - <br>Software Engineering(W402)</P>
@@ -410,7 +404,7 @@
                 </div>
 
                 <div class="skill-progress-container">
-                    <P><h5 style="color:  black;;">Tuesday</h5></P><hr>
+                    <P><h5 style="color:  wheat;;">Tuesday</h5></P><hr>
                     <p>09:00 am - 11:00 am - <br>APDS LAB( W403 ) / ML( W208 )</p>
                     <p>11:01 am - 12:00 pm - <br>Software Engineering(W402)</p>
                     <p>01:01 pm - 02:00 pm - <br>ISES (S302)</p>
@@ -419,7 +413,7 @@
                 </div>
                 
                 <div class="skill-progress-container">
-                    <P><h5 style="color:  black;;">Wednesday</h5></P><hr>
+                    <P><h5 style="color:  wheat;;">Wednesday</h5></P><hr>
                     <p>09:00 am - 11:00 am - <br>Software Engineering Lab (W102)</p>
                     <p>11:01 am - 12:00 pm - <br>OE</p>
                     <p>02:01 pm - 03:30 pm - <br>Cloud computing (W502)</p>
@@ -427,7 +421,7 @@
                         <hr>
                 </div>
                 <div class="skill-progress-container">
-                    <P><h5 style="color:  black;;">Thursday</h5></P><hr>
+                    <P><h5 style="color:  wheat;;">Thursday</h5></P><hr>
                     <p>09:00 am - 10:30 am - <br>APDS( (S607) ) /  ML LAB( W208 )</p>
                     <p>10:30 am - 12:00 pm - <br>Cloud computing (W502)</p>
                     <p>02:01 pm - 04:00 pm - <br>OE</p>
@@ -446,18 +440,18 @@
             <br><div class="skill-progress-container">
                     <hr>
                 <p>
-                    <h5 style="color: black;">Monday</h5></p>
+                    <h5 style="color: wheat;">Monday</h5></p>
                     <hr>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00">BREAKFAST</p>
+                    <p style="text-decoration: overline;font-weight:600; color:green">BREAKFAST</p>
                     <P>Idly, Peanut Chutney, Sambar,Boiled egg, Bread, Butter, Jam, Tea, Coffee, Milk</P>
     
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">LUNCH</P>
+                    <p style="text-decoration: overline;font-weight:600; color:green;">LUNCH</P>
                     <P >Phulka, Channa Masala, White Rice, Tomato Drumstick/Cauliflower Curry, Variety Dal (Pappucharu), Curd, Roti Chutney, Fryums</P>
                     
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">SNACKS</P>
+                    <p style="text-decoration: overline;font-weight:600; color:green;">SNACKS</P>
                     <P>Boiled masala corn, Tea, Coffee, Milk</P>
                     
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">DINNER</p>
+                    <p style="text-decoration: overline;font-weight:600; color:green;">DINNER</p>
                     <P>Phulka, Mixed Vegetable Curry, White Rice,
                         Sambar, South Type Vegetable Curry, Buttermilk,
                         Banana
@@ -466,79 +460,79 @@
                 </div>
     
                 <div class="skill-progress-container">
-                    <P><h5 style="color: black;">Tuesday</h5></P>
+                    <P><h5 style="color: wheat;">Tuesday</h5></P>
                     <hr>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">BREAKFAST</p><p>Potato Wheat Paratha, Curd, Pickle, Boiled Egg, Bread, Butter, Jam, Tea, Coffee, Milk</p>                
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">LUNCH</P><p>Phulka, Methi Chaman, White Rice, Sambar, Vegetable South Curry, Curd, Roti Chutney, Fryums</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">SNACKS</P><p>Punugu, Chutney,Tea, Coffee, Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">DINNER</p><p>Phulka, Aloo Khorma, Vegetable Rice, Raita,Buttermilk, Ice Cream</p>
+                    <p style="text-decoration: overline;font-weight:600; color:green;">BREAKFAST</p><p>Potato Wheat Paratha, Curd, Pickle, Boiled Egg, Bread, Butter, Jam, Tea, Coffee, Milk</p>                
+                    <p style="text-decoration: overline;font-weight:600; color:green;">LUNCH</P><p>Phulka, Methi Chaman, White Rice, Sambar, Vegetable South Curry, Curd, Roti Chutney, Fryums</p>
+                    <p style="text-decoration: overline;font-weight:600; color:green;">SNACKS</P><p>Punugu, Chutney,Tea, Coffee, Milk</p>
+                    <p style="text-decoration: overline;font-weight:600; color:green;">DINNER</p><p>Phulka, Aloo Khorma, Vegetable Rice, Raita,Buttermilk, Ice Cream</p>
                     <hr>
                 </div>
                 
                 <div class="skill-progress-container">
-                    <P><h5 style="color: black;">Wednesday</h5></P>
+                    <P><h5 style="color: wheat;">Wednesday</h5></P>
                     <hr>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">BREAKFAST</p><p>Vada, Hot Pongal, Chutney, Sambar, Bread, Butter, Jam, Tea, Coffee, Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">LUNCH</P><p>Phulka, Kadai Vegetable, White Rice, Tomato Dal, Cabbage Peas Curry, Rasam, Curd, Roti Chutney, Fryums, #ff3d00 Salad</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">SNACKS</P><p>Channa/Peanut
+                    <p style="text-decoration: overline;font-weight:600; color:green;">BREAKFAST</p><p>Vada, Hot Pongal, Chutney, Sambar, Bread, Butter, Jam, Tea, Coffee, Milk</p>
+                    <p style="text-decoration: overline;font-weight:600; color:green;">LUNCH</P><p>Phulka, Kadai Vegetable, White Rice, Tomato Dal, Cabbage Peas Curry, Rasam, Curd, Roti Chutney, Fryums, Green Salad</p>
+                    <p style="text-decoration: overline;font-weight:600; color:green;">SNACKS</P><p>Channa/Peanut
                         Sundal, Tea, Coffee,
                         Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">DINNER</p><p>Phulka,Paneer Butter Masala, Andra Chicken
+                    <p style="text-decoration: overline;font-weight:600; color:green;">DINNER</p><p>Phulka,Paneer Butter Masala, Andra Chicken
                         Curry, White rice, Rasam, Buttermilk</p>
                     <hr>
                 </div>
                 <div class="skill-progress-container">
-                    <P><h5 style="color: black;">Thursday</h5></P>
+                    <P><h5 style="color: wheat;">Thursday</h5></P>
                     <hr>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">BREAKFAST</p><p>Chole Poori, Channa Masala, Bread, Butter, Jam, Tea, Coffee, Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">LUNCH</P><p>Phulka, Dal Tadka,White rice, Sambar,
+                    <p style="text-decoration: overline;font-weight:600; color:green;">BREAKFAST</p><p>Chole Poori, Channa Masala, Bread, Butter, Jam, Tea, Coffee, Milk</p>
+                    <p style="text-decoration: overline;font-weight:600; color:green;">LUNCH</P><p>Phulka, Dal Tadka,White rice, Sambar,
                         Potato Kara Curry, Curd, Roti
                         Chutney,Fryums</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">SNACKS</P><p>#ff3d00 Banana Bajji/ Onion Pakoda, Chutney, Tea, Coffee, Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">DINNER</p><p>Phulka, Black Channa Curry, Curry) White Rice,
+                    <p style="text-decoration: overline;font-weight:600; color:green;">SNACKS</P><p>Green Banana Bajji/ Onion Pakoda, Chutney, Tea, Coffee, Milk</p>
+                    <p style="text-decoration: overline;font-weight:600; color:green;">DINNER</p><p>Phulka, Black Channa Curry, Curry) White Rice,
                         Sambar, Cabbage -65, Buttermilk, Banana</p>
                     <hr>
                 </div>
                 <div class="skill-progress-container">
-                    <P><h5 style="color: black;">Friday</h5></P>
+                    <P><h5 style="color: wheat;">Friday</h5></P>
                     <hr>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">BREAKFAST</p><p>Rava Kitchadi, Chutney, Egg
+                    <p style="text-decoration: overline;font-weight:600; color:green;">BREAKFAST</p><p>Rava Kitchadi, Chutney, Egg
                         Omelette, Bread, Butter, Jam, Tea,
                         Coffee, Milk.</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">LUNCH</P><p>Pulka,Black Channa Masala, White rice, Tindly
+                    <p style="text-decoration: overline;font-weight:600; color:green;">LUNCH</P><p>Pulka,Black Channa Masala, White rice, Tindly
                         Peanut Fry (Dondakaya), Mor Kuzhambu
                         (Dahee ka Soop), Rasam, Curd, Roti Chutney,
-                        Fryums, #ff3d00 Salad</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">SNACKS</P><p>Variety of Cake, Tea,
+                        Fryums, Green Salad</p>
+                    <p style="text-decoration: overline;font-weight:600; color:green;">SNACKS</P><p>Variety of Cake, Tea,
                         Coffee & Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">DINNER</p><p>Phulka, Kadai Paneer, North Indian Style - Chicken
+                    <p style="text-decoration: overline;font-weight:600; color:green;">DINNER</p><p>Phulka, Kadai Paneer, North Indian Style - Chicken
                         Curry, White rice, Rasam, Buttermilk</p>
                     <hr>
                 </div>
                 <div class="skill-progress-container">
-                    <P><h5 style="color: black;">Saturday</h5></P>
+                    <P><h5 style="color: wheat;">Saturday</h5></P>
                     <hr>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">BREAKFAST</p><p>Plain Paratha (Wheat), Dum Potato
+                    <p style="text-decoration: overline;font-weight:600; color:green;">BREAKFAST</p><p>Plain Paratha (Wheat), Dum Potato
                         Curry, Bread, Butter Jam, Tea, Coffee,
                         Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">LUNCH</P><p>Phulka,Mix Veg. Curry, White Rice, Variety of
+                    <p style="text-decoration: overline;font-weight:600; color:green;">LUNCH</P><p>Phulka,Mix Veg. Curry, White Rice, Variety of
                         Dal (Mudda Pappu), Ghee, Lady Finger
                         (Bendi) Peanut Fry, Sweet Pongal, Curd,
                         Mango Pickle (Avakaya), Fryums</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">SNACKS</P><p>Potato Samosa,
+                    <p style="text-decoration: overline;font-weight:600; color:green;">SNACKS</P><p>Potato Samosa,
                         Sauce, Tea, Coffee,
                         Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">DINNER</p><p>Phulka, Aloo Khorma, Tomato Rice, Raita,
+                    <p style="text-decoration: overline;font-weight:600; color:green;">DINNER</p><p>Phulka, Aloo Khorma, Tomato Rice, Raita,
                         Buttermilk, Banana</p>
                     <hr>
                 </div>
                 <div class="skill-progress-container">
-                    <P><h5 style="color: black;">Sunday</h5></P>
+                    <P><h5 style="color: wheat;">Sunday</h5></P>
                     <hr>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">BREAKFAST</p><p>Set Dosa (Uttappam), Potato Masala, Groudnut Chutney, Sambar, Bread, Butter, Jam, Tea, Coffee & Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">LUNCH</P><p>Chicken Biryani, Veg-Biryani, Raita, Veg. Gravy, Onion & Lemon</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">SNACKS</P><p>Muffin (Eggless), Tea, Coffee, Milk</p>
-                    <p style="text-decoration: overline;font-weight:600; color:#ff3d00;">DINNER</p><p>Phulka, Vegetables Kofta Curry, Sambar
+                    <p style="text-decoration: overline;font-weight:600; color:green;">BREAKFAST</p><p>Set Dosa (Uttappam), Potato Masala, Groudnut Chutney, Sambar, Bread, Butter, Jam, Tea, Coffee & Milk</p>
+                    <p style="text-decoration: overline;font-weight:600; color:green;">LUNCH</P><p>Chicken Biryani, Veg-Biryani, Raita, Veg. Gravy, Onion & Lemon</p>
+                    <p style="text-decoration: overline;font-weight:600; color:green;">SNACKS</P><p>Muffin (Eggless), Tea, Coffee, Milk</p>
+                    <p style="text-decoration: overline;font-weight:600; color:green;">DINNER</p><p>Phulka, Vegetables Kofta Curry, Sambar
                         Rice/Rasam Rice, Fryums, Buttermilk, Semiya
                         Payasam</p>
                     <hr>
@@ -553,7 +547,7 @@
             </div>
             <div class="skill-progress-container">
                 <hr>
-                <P><h5 style="color: black;">All sites</h5></P>
+                <P><h5 style="color: wheat;">All sites</h5></P>
                     <hr>
                 <a id="#" target="_blank" href="https://student.srmap.edu.in/srmapstudentcorner/StudentLoginPage" style="font-size: 25px;font-weight: 600;color:white">Portal</a><br>
                 <a id="#" target="_blank" href="https://swayamopenid.b2clogin.com/swayamopenid.onmicrosoft.com/B2C_1_swayam2/oauth2/v2.0/authorize?response_type=code&client_id=bf9d75c0-a6d0-4ab0-9e9a-054d24e2fea4&rgb(218, 0, 0)irect_uri=https%3A%2F%2Fonlinecourses.nptel.ac.in%2Fwso_ok&scope=https%3A%2F%2Fswayamopenid.onmicrosoft.com%2Fapi%2Fuser_impersonation+offline_access+openid&state=LP0Do1iCpnVdZZOSDCOjl2ScmvlqOM&access_type=authorization_code"  style="font-size: 25px;font-weight: 600;color:white">Swayam</a><br>
@@ -572,43 +566,43 @@
             </div>
             <br><div class="skill-progress-container">
                 <hr>
-            <p><h5 style="color: black;;">20.05.2024</h5></p><hr>
+            <p><h5 style="color: wheat;;">20.05.2024</h5></p><hr>
             <p>2.00 pm - 4.00 pm - <br>ISES302</p>
             <hr>
         </div>
 
         <div class="skill-progress-container">
-            <P><h5 style="color:  black;;">22.05.2024</h5></P><hr>
+            <P><h5 style="color:  wheat;;">22.05.2024</h5></P><hr>
             <p>2.00 pm - 5.00 pm - <br>APDS / ML</p>
             <hr>
         </div>
 
         <div class="skill-progress-container">
-            <P><h5 style="color:  black;;">24.05.2024</h5></P><hr>
+            <P><h5 style="color:  wheat;;">24.05.2024</h5></P><hr>
             <p>2.00 pm - 5.00 pm - <br>CSE318A (CLOUD COMPUTING)</p>
             <hr>
         </div>
 
         <div class="skill-progress-container">
-            <P><h5 style="color:  black;;">27.05.2024</h5></P><hr>
+            <P><h5 style="color:  wheat;;">27.05.2024</h5></P><hr>
             <p>2.00 pm - 5.00 pm - <br>CSE305 (SOFTWARE ENGINEERING)</p>
             <hr>
         </div>
 
         <div class="skill-progress-container">
-            <P><h5 style="color:  black;">29.05.2024</h5></P><hr>
+            <P><h5 style="color:  wheat;">29.05.2024</h5></P><hr>
             <p>9:30 am - 12:30 pm - <br>ME230 (INTRODUCTION TO AIRCRAFT SYSTEM)</p>
             <hr>
         </div>
 
         <div class="skill-progress-container">
-            <P><h5 style="color:  black;;">31.05.2024</h5></P><hr>
+            <P><h5 style="color:  wheat;;">31.05.2024</h5></P><hr>
             <p>9:30 am - 12:30 pm - <br> MGT116(LEADERSHIP AND CORPORATE CULTURE)</p>
             <hr>
         </div>
 
         <div class="skill-progress-container">
-            <P><h5 style="color:  black;">4.06.2024</h5></P><hr>
+            <P><h5 style="color:  wheat;">4.06.2024</h5></P><hr>
             <p>9:30 am - 12:30 pm - <br>LBA001 (SUSTAINABLE CITIES AND CLIMATE CHANGE)</p>
             <hr>
         </div>
