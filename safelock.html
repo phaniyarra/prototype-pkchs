@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Lucida Console', Monaco, monospace;
+            margin: 0;
+            padding: 20px;
+            background-image: url('https://www.transparenttextures.com/patterns/black-paper.png');
+        }
+
+        .logo {
+            border: 3px solid #E0C097;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #1C1C1C;
+            text-align: center;
+        }
+
+        .notepad {
+            background-color: #1C1C1C;
+            border: 3px solid #7b7b7b;
+            padding: 15px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #E0C097;
+            font-family: 'Cursive', sans-serif;
+        }
+
+        .section-title {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #E0C097;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        input[type="text"] {
+            background-color: #000000;
+            color: #E0C097;
+            border: 2px solid #E0C097;
+            padding: 5px;
+            font-family: 'Lucida Console', Monaco, monospace;
+            width: calc(100% - 16px);
+        }
+
+        button {
+            background-color: #1C1C1C;
+            color: #E0C097;
+            border: 2px solid #E0C097;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-family: 'Lucida Console', Monaco, monospace;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+            padding: 5px;
+            background-color: #333333;
+            border: 2px solid #7b7b7b;
+        }
+
+        .delete {
+            background-color: #000000;
+            color: #E0C097;
+            border: 2px solid #7b7b7b;
+            padding: 2px 5px;
+            cursor: pointer;
+            font-family: 'Lucida Console', Monaco, monospace;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <section id="notes" class="notepad">
+            <h2>Psvkry Safe</h2>
+            <div class="section-title"></div>
+            <input type="text" id="search-bar" placeholder="Enter the Safe Boss">
+            <button onclick="addTask()">Save</button>
+            <ul id="list-container"></ul>
+        </section>
+        <script>
+            function addTask() {
+                const input = document.getElementById('search-bar');
+                const ul = document.getElementById('list-container');
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    ${input.value} 
+                    <button class="delete" onclick="deleteTask(this)">Delete</button>
+                `;
+                ul.appendChild(li);
+
+                // Save the task to local storage
+                saveTasks();
+
+                input.value = '';
+            }
+
+            function saveTasks() {
+                const ul = document.getElementById('list-container');
+                const tasks = [];
+                ul.querySelectorAll('li').forEach(li => {
+                    tasks.push(li.innerHTML);
+                });
+                localStorage.setItem('tasks', JSON.stringify(tasks));
+            }
+
+            function loadTasks() {
+                const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+                const ul = document.getElementById('list-container');
+                tasks.forEach(task => {
+                    const li = document.createElement('li');
+                    li.innerHTML = task;
+                    ul.appendChild(li);
+                });
+            }
+
+            function deleteTask(button) {
+                const ul = document.getElementById('list-container');
+                ul.removeChild(button.parentElement);
+                saveTasks();
+            }
+
+            // Load tasks when the page loads
+            document.addEventListener('DOMContentLoaded', loadTasks);
+        </script>
+    </div>
+</body>
+</html>
