@@ -201,8 +201,9 @@ strong{
         <script>
             document.getElementById("finance").addEventListener("click", function(event){
                 event.preventDefault();
-                var userInput = prompt("\nWelcome...! Enter the safe code");
-                if (userInput === "1389") {
+                var userInput = prompt("Enter the safe code");
+                if (userInput === "511389") {
+                    alert("Yes Sir..!")
                     window.location.href = "safelock.html";
                 }
                 else{
