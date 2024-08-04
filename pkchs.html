@@ -197,7 +197,19 @@ strong{
 </head>
 <body>
     <div class="safe">
-        <img src="https://i.ibb.co/SckSvb6/safe.png" alt="">
+        <a id="finance" href=""><img src="https://i.ibb.co/SckSvb6/safe.png" alt=""></a>
+        <script>
+            document.getElementById("finance").addEventListener("click", function(event){
+                event.preventDefault();
+                var userInput = prompt("\nWelcome...! Enter the safe code");
+                if (userInput === "1389") {
+                    window.location.href = "safelock.html";
+                }
+                else{
+                    alert("You are not allowed to safe")
+                }
+            });
+        </script>
     </div>
     <div class="logo">
         <img src="https://i.ibb.co/2gR2x08/logo.jpg" alt="Pkchs Logo">
