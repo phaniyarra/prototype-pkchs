@@ -6,193 +6,171 @@
     <title>Pkchs</title>
     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/pbwXCGF/pkchs-logo.jpg">
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+        body {
+            font-family: 'Courier New', Courier, monospace; /* Retro font */
+            background-color: #000000; /* Black background */
+            color: #00ff00; /* Neon green text */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
 
-body {
-    font-family: 'Comic Neue', cursive, sans-serif;
-    background-color: #000000; /* Classic black background for a more retro computer feel */
-    color: #00ff00; /* Neon green text for a CRT monitor effect */
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background-image: url('https://www.transparenttextures.com/patterns/paper.png'); /* Slightly textured paper background */
-    background-repeat: repeat;
-}
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #000000; /* Black background for container */
+            border: 2px solid #ff00ff; /* Neon pink border */
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.5); /* Neon pink glow */
+        }
 
-.container {
-    width: 80%;
-    max-width: 960px;
-    margin: 20px auto;
-    text-align: left;
-    padding: 20px;
-    background-color: #000080; /* Navy blue for a classic retro look */
-    border: 3px solid #ff00ff; /* Bright magenta border */
-    border-radius: 0px; /* Sharp corners */
-    box-shadow: 4px 4px 0 #00ff00; /* Bright green shadow for a pixelated effect */
-}
+        p#datetime {
+            background: #ffd600;
+            color: #000000;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 700;
+            width: 100%;
+            text-align: center;
+        }
 
-p#datetime {
-    background: #ff00ff; /* Bright magenta background */
-    padding: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #000000; /* Black text for high contrast */
-    border-radius: 0px; /* Sharp corners */
-    border: 2px solid #00ff00; /* Neon green border */
-}
-h2 {
-    text-align: center;
-}
-a {
-    color: #00ffff; /* Neon cyan for links */
-    text-decoration: underline;
-}
+        h1, h2, h3, h4, h5, h6 {
+            color: #00ffff; /* Neon cyan text */
+            font-size: 24px;
+            margin-top: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
 
-a:hover {
-    color: #ff00ff; /* Bright magenta on hover */
-}
+        h5 {
+            color: #ff00ff; /* Neon pink */
+            margin: 30px 0;
+        }
 
-input[type="text"] {
-    padding: 10px;
-    width: 100%;
-    font-family: 'Comic Neue', cursive, sans-serif;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    background: #000000; /* Black background */
-    border: 2px solid #00ffff; /* Neon cyan border */
-    font-size: 16px;
-    color: #00ff00; /* Neon green text */
-}
+        a {
+            color: #ff00ff; /* Neon pink links */
+            text-decoration: underline;
+        }
 
-button {
-    font-size: 16px;
-    padding: 10px 20px;
-    margin: 10px 0;
-    font-family: 'Comic Neue', cursive, sans-serif;
-    background-color: #00ff27; /* Bright magenta background */
-    color: #000000; /* Black text */
-    border: 2px solid #00ffff; /* Neon cyan border */
-    cursor: pointer;
-    border-radius: 0px; /* Sharp corners */
-}
+        a:hover {
+            text-decoration: none;
+        }
 
-button:hover {
-    background-color: #ff0099; /* Slightly darker magenta on hover */
-}
+        input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            background-color: #202122; /* Dark background for input */
+            color: #00ff00; /* Neon green text */
+            border: 1px solid #ff00ff; /* Neon pink border */
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace; /* Retro font */
+        }
 
-input:focus, button:focus {
-    outline: none;
-    border-color: #ff00ff; /* Bright magenta border on focus */
-}
+        button {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            padding: 10px;
+            background-color: #ff00ff; /* Neon pink */
+            color: #000000; /* Black text */
+            border: 1px solid #00ffff; /* Neon cyan border */
+            cursor: pointer;
+            border-radius: 3px;
+            margin: 10px 0;
+        }
 
-.menubar {
-    background-color: #000080; /* Navy blue background */
-    color: #00ff00; /* Neon green text */
-    padding: 10px;
-    text-align: center;
-    width: 94.5%;
-    border-bottom: 3px solid #ff00ff; /* Bright magenta border */
-}
+        button:hover {
+            background-color: #00ffff; /* Neon cyan on hover */
+            color: #000000; /* Black text on hover */
+        }
 
-.menubar a {
-    color: #00ffff; /* Neon cyan for links */
-    margin: 0 10px;
-    text-decoration: none;
-}
+        .menubar {
+            background-color: #000000; /* Black background */
+            color: #00ff00; /* Neon green text */
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #ff00ff; /* Neon pink border */
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(255, 0, 255, 0.5); /* Neon pink shadow */
+        }
 
-.menubar a:hover {
-    color: #ff00ff; /* Bright magenta on hover */
-}
+        .menubar a {
+            color: #00ffff; /* Neon cyan */
+            margin: 0 15px;
+            text-decoration: underline;
+        }
 
-.logo img {
-    max-width: 100%;
-    height: auto;
-}
+        .menubar a:hover {
+            text-decoration: none;
+        }
 
-.notepad {
-    margin-top: 20px;
-}
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
 
-.notepad h1 {
-    font-size: 24px;
-    border-bottom: 3px solid #ff00ff; /* Bright magenta border */
-    padding-bottom: 10px;
-}
+        .notepad, .timetable, .mess-menu, #exam {
+            margin-top: 20px;
+        }
+        .section-title{
+            width: 97%;
+            background: rgb(97, 97, 97);
+            height: 1px;
+        }
+        .notepad h1, .timetable h2, .mess-menu h2, #exam h2 {
+            border-bottom: 2px solid #ff00ff; /* Neon pink border */
+            padding-bottom: 10px;
+            text-align: end;
+        }
 
-.notepad input {
-    width: calc(100% - 20px);
-}
+        .notepad ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
 
-.notepad ul {
-    list-style: disc;
-    padding-left: 20px;
-    color: #00ff00; /* Neon green text */
-}
+        .delete {
+            background-color: #ff4d4d; /* Neon red */
+            color: #fff;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-left: 10px;
+            border-radius: 3px;
+        }
 
-.timetable, .mess-menu {
-    margin-top: 20px;
-}
-
-.timetable p, .mess-menu p {
-    margin: 15px 0;
-}
-
-.section-title {
-    font-size: 20px;
-    border-bottom: 3px solid #00ffff; /* Neon cyan border */
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #00ff00; /* Neon green text */
-}
-
-.delete {
-    background-color: #ff0000; /* Bright red background */
-    color: #ffffff; /* White text */
-    border: 2px solid #000000; /* Black border */
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 12px;
-    margin-left: 10px;
-    border-radius: 0px; /* Sharp corners */
-}
-
-.delete:hover {
-    background-color: #cc0000; /* Slightly darker red on hover */
-}
-h5 {
-    font-size: 27px;
-    color: #00ceff;
-}
-strong{
-    color: #ffab00;
+        .delete:hover {
+            background-color: #ff3333; /* Darker red on hover */
+        }
+        strong {
+    color: yellow;
 }
 .safe img{
     width: 16%;
     position: fixed;
     right: 0;
 }
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .menubar a {
-        display: block;
-        margin: 5px 0;
-    }
-
-    .notepad input {
-        width: calc(100% - 20px);
-    }
-    .safe img{
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 10px;
+            }
+            p#datetime {
+                width: 95%;
+            }
+            .menubar a {
+                display: block;
+                margin: 5px 0;
+            }
+            .safe img{
         width: 34%;
         position: fixed;
         right: 0px;
         top: 132px;
 }
-}
-
+        }
     </style>
 </head>
 <body>
@@ -213,134 +191,133 @@ strong{
         </script>
     </div>
     <div class="logo">
-        <img src="https://i.ibb.co/2gR2x08/logo.jpg" alt="Pkchs Logo">
+        <img src="https://i.ibb.co/BytDWFR/pkchs-logo.jpg" alt="Pkchs Logo">
     </div>
     <div class="menubar">
-        <a href="#notes">Note Pad</a>
+        <a href="#notes">Notepad</a>
         <a href="#about">Time Table</a>
         <a href="#services">Mess Menu</a>
         <a href="#exam">Exams</a>
     </div>
-    
+
     <div class="timedate">
         <p id="datetime"></p>
     </div>
-    
+
     <div class="container">
         <section id="notes" class="notepad">
-            <h2>Notepad</h2>
-            <div class="section-title"></div>
-            <p>Enter the note you like save here!</p>
+            <h1>Notepad</h1>
+            <p>Enter the note you like to save here!</p>
             <input type="text" id="search-bar">
             <button onclick="addTask()">Save the note</button>
             <ul id="list-container"></ul>
         </section>
-        
+
         <section id="about" class="timetable">
             <h2>Time Table</h2>
             <div class="section-title"></div>
-            <p><strong style="color: #00ceff; font-size: 25px;">Monday</strong><br>
-                <p><strong>09:00 - 10:55 am </strong>- Big Data Lab<br> (V102)<br>
-                <p><strong>02:00 - 03:55 pm </strong>- Big Data<br> (S204)<br>
-                <p><strong>04:00 - 05:30 pm </strong>- Information Retrieval<br> (S305)
+            <p><strong>Monday</strong><br>
+                <strong>09:00 - 10:55 am</strong> - Big Data Lab<br>
+                <strong>02:00 - 03:55 pm</strong> - Big Data<br>
+                <strong>04:00 - 05:30 pm</strong> - Information Retrieval
             </p>
             <div class="section-title"></div>
-            <p><strong style="color: #00ceff; font-size: 25px;">Tuesday</strong><br>
-                <p><strong>09:00 - 10:55 am</strong> - Information Retrieval Lab<br> (V602)<br>
-                <p><strong>02:00 - 03:55 pm</strong> - Information Retrieval<br> (V305)
+            <p><strong>Tuesday</strong><br>
+                <strong>09:00 - 10:55 am</strong> - Information Retrieval Lab<br>
+                <strong>02:00 - 03:55 pm</strong> - Information Retrieval
             </p>
             <div class="section-title"></div>
-            <p><strong style="color: #00ceff; font-size: 25px;">Wednesday</strong><br>
-                <p><strong>10:00 - 10:55 am</strong> - Big Data <br>(S204)
+            <p><strong>Wednesday</strong><br>
+                <strong>10:00 - 10:55 am</strong> - Big Data
             </p>
             <div class="section-title"></div>
         </section>
-        
+
         <section id="services" class="mess-menu">
             <h2>Mess Menu</h2>
-                    <div class="section-title"></div>
-                    <h5>Monday</h5>
-                    <p><strong>BREAKFAST (7:30 am - 9:00 am)</strong></p>
-                    <p>Idly, Peanut Chutney, Sambar, Boiled egg, Bread, Butter, Jam, Tea, Coffee, Milk</p><br>
-                    <p><strong>LUNCH (12:00 pm - 2:00 pm)</strong></p>
-                    <p>Phulka, Channa Masala, White Rice, Tomato Drumstick/Cauliflower Curry, Pappucharu, Curd, Roti Chutney, Green salad</p><br>
-                    <p><strong>SNACKS (4:30 pm - 5:30 pm)</strong></p>
-                    <p>Boiled masala corn, Tea, Coffee, Milk</p><br>
-                    <p><strong>DINNER (7:15 pm - 8:30 pm)</strong></p>
-                    <p>Phulka, Mixed Vegetable Curry, White Rice, Sambar, Vegetable Curry, Buttermilk, Banana</p><br>
+            <div class="section-title"></div>
+            <h5>Monday</h5>
+            <p><strong>BREAKFAST (7:30 am - 9:00 am)</strong></p>
+            <p>Idly, Peanut Chutney, Sambar, Boiled egg, Bread, Butter, Jam, Tea, Coffee, Milk</p>
+            <p><strong>LUNCH (12:00 pm - 2:00 pm)</strong></p>
+            <p>Phulka, Channa Masala, White Rice, Tomato Drumstick/Cauliflower Curry, Pappucharu, Curd, Roti Chutney, Green salad</p>
+            <p><strong>SNACKS (4:30 pm - 5:30 pm)</strong></p>
+            <p>Boiled masala corn, Tea, Coffee, Milk</p>
+            <p><strong>DINNER (7:15 pm - 8:30 pm)</strong></p>
+            <p>Phulka, Mixed Vegetable Curry, White Rice, Sambar, Vegetable Curry, Buttermilk, Banana</p>
 
-                    <div class="section-title"></div>
-                    <h5>Tuesday</h5>
-                    <p><strong>BREAKFAST (7:30 am - 9:00 am)</strong></p>
-                    <p>Potato Wheat Paratha, Curd, Pickle, Boiled Egg, Bread, Butter, Jam, Tea, Coffee, Milk</p><br>
-                    <p><strong>LUNCH (12:00 pm - 2:00 pm)</strong></p>
-                    <p>Phulka, Methi Chaman, White Rice, Sambar, Vegetable South Curry, Curd, Roti Chutney, Fryums</p><br>
-                    <p><strong>SNACKS (4:30 pm - 5:30 pm)</strong></p>
-                    <p>Punugu, Chutney, Tea, Coffee, Milk</p><br>
-                    <p><strong>DINNER (7:15 pm - 8:30 pm)</strong></p>
-                    <p>Phulka, Aloo Khorma, Vegetable Rice, Raita, Buttermilk, Ice Cream</p><br>
+            <div class="section-title"></div>
+            <h5>Tuesday</h5>
+            <p><strong>BREAKFAST (7:30 am - 9:00 am)</strong></p>
+            <p>Potato Wheat Paratha, Curd, Pickle, Boiled Egg, Bread, Butter, Jam, Tea, Coffee, Milk</p>
+            <p><strong>LUNCH (12:00 pm - 2:00 pm)</strong></p>
+            <p>Phulka, Methi Chaman, White Rice, Sambar, Vegetable South Curry, Curd, Roti Chutney, Fryums</p>
+            <p><strong>SNACKS (4:30 pm - 5:30 pm)</strong></p>
+            <p>Punugu, Chutney, Tea, Coffee, Milk</p>
+            <p><strong>DINNER (7:15 pm - 8:30 pm)</strong></p>
+            <p>Phulka, Pesarattu (Moong Dal Dosa), Sambar, White Rice, Curd</p>
 
-                    <div class="section-title"></div>
-                    <h5>Wednesday</h5>
-                    <p><strong>BREAKFAST (7:30 am - 9:00 am)</strong></p>
-                    <p>Vada, Hot Pongal, Chutney, Sambar, Bread, Butter, Jam, Tea, Coffee, Milk</p><br>
-                    <p><strong>LUNCH (12:00 pm - 2:00 pm)</strong></p>
-                    <p>Phulka, Kadai Vegetable, White Rice, Tomato Dal, Cabbage Peas Curry, Rasam, Curd, Roti Chutney, Fryums, Green Salad</p><br>
-                    <p><strong>SNACKS (4:30 pm - 5:30 pm)</strong></p>
-                    <p>Channa/Peanut Sundal, Tea, Coffee, Milk</p><br>
-                    <p><strong>DINNER (7:15 pm - 8:30 pm)</strong></p>
-                    <p>Phulka, Paneer Butter Masala, Andhra Chicken Curry, White rice, Rasam, Buttermilk</p><br>
+            <div class="section-title"></div>
+            <h5>Wednesday</h5>
+            <p><strong>BREAKFAST (7:30 am - 9:00 am)</strong></p>
+            <p>Upma, Chutney, Sambar, Bread, Butter, Jam, Tea, Coffee, Milk</p>
+            <p><strong>LUNCH (12:00 pm - 2:00 pm)</strong></p>
+            <p>Phulka, Kadai Vegetable, White Rice, Tomato Dal, Cabbage Peas Curry, Rasam, Curd, Roti Chutney, Fryums, Green Salad</p>
+            <p><strong>SNACKS (4:30 pm - 5:30 pm)</strong></p>
+            <p>Channa/Peanut Sundal, Tea, Coffee, Milk</p>
+            <p><strong>DINNER (7:15 pm - 8:30 pm)</strong></p>
+            <p>Phulka, Paneer Butter Masala, Andhra Chicken Curry, White rice, Rasam, Buttermilk</p>
 
-                    <div class="section-title"></div>
-                    <h5>Thursday</h5>
-                    <p><strong>BREAKFAST (7:30 am - 9:00 am)</strong></p>
-                    <p>Chole Poori, Channa Masala, Bread, Butter, Jam, Tea, Coffee, Milk</p><br>
-                    <p><strong>LUNCH (12:00 pm - 2:00 pm)</strong></p>
-                    <p>Phulka, Dal Tadka, White rice, Sambar, Potato Kara Curry, Curd, Roti, Chutney, Fryums</p><br>
-                    <p><strong>SNACKS (4:30 pm - 5:30 pm)</strong></p>
-                    <p>Green Banana Bajji/Onion Pakoda, Chutney, Tea, Coffee, Milk</p><br>
-                    <p><strong>DINNER (7:15 pm - 8:30 pm)</strong></p>
-                    <p>Phulka, Black Channa Curry, White Rice, Sambar, Cabbage -65, Buttermilk, Banana</p><br>
+            <div class="section-title"></div>
+            <h5>Thursday</h5>
+            <p><strong>BREAKFAST (7:30 am - 9:00 am)</strong></p>
+            <p>Chole Poori, Channa Masala, Bread, Butter, Jam, Tea, Coffee, Milk</p>
+            <p><strong>LUNCH (12:00 pm - 2:00 pm)</strong></p>
+            <p>Phulka, Dal Tadka, White rice, Sambar, Potato Kara Curry, Curd, Roti, Chutney, Fryums</p>
+            <p><strong>SNACKS (4:30 pm - 5:30 pm)</strong></p>
+            <p>Green Banana Bajji/Onion Pakoda, Chutney, Tea, Coffee, Milk</p>
+            <p><strong>DINNER (7:15 pm - 8:30 pm)</strong></p>
+            <p>Phulka, Black Channa Curry, White Rice, Sambar, Cabbage -65, Buttermilk, Banana</p>
 
-                    <div class="section-title"></div>
-                    <h5>Friday</h5>
-                    <p><strong>BREAKFAST (7:30 am - 9:00 am)</strong></p>
-                    <p>Rava Kitchadi, Chutney, Egg Omelette, Bread, Butter, Jam, Tea, Coffee, Milk</p><br>
-                    <p><strong>LUNCH (12:00 pm - 2:00 pm)</strong></p>
-                    <p>Phulka, Black Channa Masala, White rice, Tindly Peanut Fry (Dondakaya), Mor Kuzhambu (Dahee ka Soop), Rasam, Curd, Roti, Chutney, Fryums, Green Salad</p><br>
-                    <p><strong>SNACKS (4:30 pm - 5:30 pm)</strong></p>
-                    <p>Variety of Cake, Tea, Coffee, Milk</p><br>
-                    <p><strong>DINNER (7:15 pm - 8:30 pm)</strong></p>
-                    <p>Phulka, Kadai Paneer, North Indian Style - Chicken Curry, White rice, Rasam, Buttermilk</p><br>
+            <div class="section-title"></div>
+            <h5>Friday</h5>
+            <p><strong>BREAKFAST (7:30 am - 9:00 am)</strong></p>
+            <p>Rava Kitchadi, Chutney, Egg Omelette, Bread, Butter, Jam, Tea, Coffee, Milk</p>
+            <p><strong>LUNCH (12:00 pm - 2:00 pm)</strong></p>
+            <p>Phulka, Black Channa Masala, White rice, Tindly Peanut Fry (Dondakaya), Mor Kuzhambu (Dahee ka Soop), Rasam, Curd, Roti, Chutney, Fryums, Green Salad</p>
+            <p><strong>SNACKS (4:30 pm - 5:30 pm)</strong></p>
+            <p>Variety of Cake, Tea, Coffee, Milk</p>
+            <p><strong>DINNER (7:15 pm - 8:30 pm)</strong></p>
+            <p>Phulka, Kadai Paneer, North Indian Style - Chicken Curry, White rice, Rasam, Buttermilk</p>
 
-                    <div class="section-title"></div>
-                    <h5>Saturday</h5>
-                    <p><strong>BREAKFAST (7:30 am - 9:00 am)</strong></p>
-                    <p>Plain Paratha (Wheat), Dum Potato Curry, Bread, Butter, Jam, Tea, Coffee, Milk</p><br>
-                    <p><strong>LUNCH (12:00 pm - 2:00 pm)</strong></p>
-                    <p>Phulka, Mix Veg. Curry, White Rice, Variety of Dal (Mudda Pappu), Ghee, Lady Finger (Bendi) Peanut Fry, Sweet Pongal, Curd, Mango Pickle (Avakaya), Fryums</p><br>
-                    <p><strong>SNACKS (4:30 pm - 5:30 pm)</strong></p>
-                    <p>Potato Samosa, Sauce, Tea, Coffee, Milk</p><br>
-                    <p><strong>DINNER (7:15 pm - 8:30 pm)</strong></p>
-                    <p>Phulka, Aloo Khorma, Tomato Rice, Raita, Buttermilk, Banana</p><br>
+            <div class="section-title"></div>
+            <h5>Saturday</h5>
+            <p><strong>BREAKFAST (7:30 am - 9:00 am)</strong></p>
+            <p>Plain Paratha (Wheat), Dum Potato Curry, Bread, Butter, Jam, Tea, Coffee, Milk</p>
+            <p><strong>LUNCH (12:00 pm - 2:00 pm)</strong></p>
+            <p>Phulka, Mix Veg. Curry, White Rice, Variety of Dal (Mudda Pappu), Ghee, Lady Finger (Bendi) Peanut Fry, Sweet Pongal, Curd, Mango Pickle (Avakaya), Fryums</p>
+            <p><strong>SNACKS (4:30 pm - 5:30 pm)</strong></p>
+            <p>Potato Samosa, Sauce, Tea, Coffee, Milk</p>
+            <p><strong>DINNER (7:15 pm - 8:30 pm)</strong></p>
+            <p>Phulka, Aloo Khorma, Tomato Rice, Raita, Buttermilk, Banana</p>
 
-                    <div class="section-title"></div>
-                    <h5>Sunday</h5>
-                    <p><strong>BREAKFAST (7:30 am - 9:00 am)</strong></p>
-                    <p>Set Dosa (Uttappam), Potato Masala, Groundnut Chutney, Sambar, Bread, Butter, Jam, Tea, Coffee, Milk</p><br>
-                    <p><strong>LUNCH (12:00 pm - 2:00 pm)</strong></p>
-                    <p>Chicken Biryani, Veg-Biryani, Raita, Veg. Gravy, Onion & Lemon</p><br>
-                    <p><strong>SNACKS (4:30 pm - 5:30 pm)</strong></p>
-                    <p>Muffin (Eggless), Tea, Coffee, Milk</p><br>
-                    <p><strong>DINNER (7:15 pm - 8:30 pm)</strong></p>
-                    <p>Phulka, Vegetables Kofta Curry, Sambar Rice/Rasam Rice, Fryums, Buttermilk, Semiya Payasam</p>  <br>  
-        </div>
-    </section>
+            <div class="section-title"></div>
+            <h5>Sunday</h5>
+            <p><strong>BREAKFAST (7:30 am - 9:00 am)</strong></p>
+            <p>Set Dosa (Uttappam), Potato Masala, Groundnut Chutney, Sambar, Bread, Butter, Jam, Tea, Coffee, Milk</p>
+            <p><strong>LUNCH (12:00 pm - 2:00 pm)</strong></p>
+            <p>Chicken Biryani, Veg-Biryani, Raita, Veg. Gravy, Onion & Lemon</p>
+            <p><strong>SNACKS (4:30 pm - 5:30 pm)</strong></p>
+            <p>Muffin (Eggless), Tea, Coffee, Milk</p>
+            <p><strong>DINNER (7:15 pm - 8:30 pm)</strong></p>
+            <p>Phulka, Vegetables Kofta Curry, Sambar Rice/Rasam Rice, Fryums, Buttermilk, Semiya Payasam</p>  
+        </section>
 
-    <section id="exam">
-        <h2>Mid Exam</h2><br>
-        <hr><p style="text-align: center;">Not Updated</p><hr>
-    </section>
+        <section id="exam">
+            <h2>Mid Exam</h2>
+            <hr><p style="text-align: center;">Not Updated</p><hr>
+        </section>
+    </div>
 
     <script>
         function updateTime() {
@@ -358,7 +335,7 @@ strong{
         }
         setInterval(updateTime, 1000);
         updateTime();
-    
+
         function addTask() {
             const input = document.getElementById('search-bar');
             const ul = document.getElementById('list-container');
@@ -368,13 +345,13 @@ strong{
                 <button class="delete" onclick="deleteTask(this)">Delete</button>
             `;
             ul.appendChild(li);
-    
+
             // Save the task to local storage
             saveTasks();
-    
+
             input.value = '';
         }
-    
+
         function saveTasks() {
             const ul = document.getElementById('list-container');
             const tasks = [];
@@ -383,7 +360,7 @@ strong{
             });
             localStorage.setItem('tasks', JSON.stringify(tasks));
         }
-    
+
         function loadTasks() {
             const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
             const ul = document.getElementById('list-container');
@@ -393,13 +370,13 @@ strong{
                 ul.appendChild(li);
             });
         }
-    
+
         function deleteTask(button) {
             const ul = document.getElementById('list-container');
             ul.removeChild(button.parentElement);
             saveTasks();
         }
-    
+
         // Load tasks when the page loads
         document.addEventListener('DOMContentLoaded', loadTasks);
     </script>
