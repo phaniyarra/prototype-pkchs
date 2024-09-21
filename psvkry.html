@@ -5,182 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pkchs</title>
     <link rel="icon" type="image/x-icon" href="https://i.ibb.co/pbwXCGF/pkchs-logo.jpg">
-    <style>
-        body {
-            font-family: 'Courier New', Courier, monospace; /* Retro font */
-            background-color: #000000; /* Black background */
-            color: #00ff00; /* Neon green text */
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+ /* Importing Playfair Display font from Google Fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Roboto+Slab:wght@100..900&family=Satisfy&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #000000; /* Black background for container */
-            border: 2px solid #ff00ff; /* Neon pink border */
-            border-radius: 5px;
-            box-shadow: 0 0 15px rgba(255, 0, 255, 0.5); /* Neon pink glow */
-        }
 
-        p#datetime {
-            background: #000000;
-    color: #ffffff;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: 700;
-    width: 100%;
-    text-align: center;
-    bottom: -16px;
-    position: fixed;
-    padding: 16px;
-        }
+body {
+    font-family: "Cormorant Garamond", serif;
+    color: #000;
+    background-color: #fff;
+}
 
-        h1, h2, h3, h4, h5, h6 {
-            color: #00ffff; /* Neon cyan text */
-            font-size: 24px;
-            margin-top: 20px;
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        h5 {
-            color: #ff00ff; /* Neon pink */
-            margin: 30px 0;
-        }
-
-        a {
-            color: #ff00ff; /* Neon pink links */
-            text-decoration: underline;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-
-        input[type="text"] {
-            padding: 10px;
-            width: 100%;
-            box-sizing: border-box;
-            margin-bottom: 10px;
-            background-color: #202122; /* Dark background for input */
-            color: #00ff00; /* Neon green text */
-            border: 1px solid #ff00ff; /* Neon pink border */
-            border-radius: 3px;
-            font-family: 'Courier New', Courier, monospace; /* Retro font */
-        }
-
-        button {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 14px;
-            padding: 10px;
-            background-color: #00ffff; /* Neon pink */
-            color: #000000; /* Black text */
-            border: 1px solid #00ffff; /* Neon cyan border */
-            cursor: pointer;
-            border-radius: 3px;
-            margin: 10px 0;
-        }
-
-        button:hover {
-            background-color: #ff00ff; /* Neon cyan on hover */
-            color: #000000; /* Black text on hover */
-        }
+body {
+    background-color: #ffffff; /* Black background */
+    color: #fff; /* White text */
+    font-weight: 600;
+    line-height: 1.6;
+}
 
         .menubar {
-            background-color: #000000; /* Black background */
-            color: #00ff00; /* Neon green text */
-            padding: 10px;
+            background-color: black;
+            padding: 10px 0;
             text-align: center;
-            border-bottom: 2px solid #ff00ff; /* Neon pink border */
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(255, 0, 255, 0.5); /* Neon pink shadow */
         }
 
         .menubar a {
-            color: #00ffff; /* Neon cyan */
+            color: white;
+            text-decoration: none;
             margin: 0 15px;
-            text-decoration: underline;
+            font-weight: bold;
         }
 
         .menubar a:hover {
-            text-decoration: none;
-            color: #ff00ff;
+            text-decoration: underline;
         }
 
-        .logo img {
-            max-width: 100%;
-            height: auto;
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
         }
 
-        .notepad, .timetable, .mess-menu, #exam {
-            margin-top: 20px;
-        }
-        .section-title{
-            width: 97%;
-            background: rgb(97, 97, 97);
-            height: 1px;
-        }
-        .notepad h1, .timetable h2, .mess-menu h2, #exam h2 {
-            border-bottom: 2px solid #ff00ff; /* Neon pink border */
-            padding-bottom: 10px;
-            text-align: end;
+        h1, h2, h5 {
+            color: black;
+            text-align: center;
+            font-weight: normal;
         }
 
-        .notepad ul {
-            list-style: disc;
-            padding-left: 20px;
+        p {
+            font-size: 18px;
+            color: black;
         }
 
-        .delete {
-            background-color: #ff4d4d; /* Neon red */
-            color: #fff;
+        .section-title {
+            border-bottom: 2px solid black;
+            margin: 20px 0;
+        }
+
+        .notepad input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
             border: none;
-            padding: 5px;
+            border-radius: 5px;
             cursor: pointer;
-            font-size: 12px;
-            margin-left: 10px;
-            border-radius: 3px;
         }
 
-        .delete:hover {
-            background-color: #ff3333; /* Darker red on hover */
+        button:hover {
+            background-color: #333;
         }
-        strong {
-    color: yellow;
-}
-.safe img{
-    width: 13%;
-    position: fixed;
-    right: 0;
-    top: 10%;
-}
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
-                padding: 10px;
-            }
-            p#datetime {
-                width: 95%;
-            }
-            .menubar a {
-                display: block;
-                margin: 5px 0;
-            }
-            .safe img{
-        width: 34%;
-        position: fixed;
-        right: 0px;
-        top: 132px;
-}
+
+        ul {
+            list-style-type: none;
+            padding: 0;
         }
+
+        ul li {
+            background-color: #f4f4f4;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 4px solid black;
+        }
+
+        ul li button.delete {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-left: 10px;
+        }
+
+        .timedate {
+            text-align: center;
+            font-size: 18px;
+            margin: 20px 0;
+            color: black;
+        }
+
+        /* Table and schedule styling */
+        .timetable p, .mess-menu p {
+            margin: 10px 0;
+            padding: 5px;
+        }
+
+        .timetable strong {
+            font-size: 18px;
+        }
+    </style>
+
     </style>
 </head>
 <body>
     <div class="safe">
-        <a id="finance" href=""><img src="https://i.ibb.co/SckSvb6/safe.png" alt=""></a>
         <script>
             document.getElementById("finance").addEventListener("click", function(event){
                 event.preventDefault();
@@ -195,18 +140,14 @@
             });
         </script>
     </div>
-    <div class="logo">
-        <img src="https://i.ibb.co/qgTFjLQ/logo.jpg" alt="Pkchs Logo">
-    </div>
-    <div class="menubar">
-        <a href="#notes">Notepad</a>
-        <a href="#about">Time Table</a>
-        <a href="#services">Mess Menu</a>
-        <a href="#exam">Exams</a>
-    </div>
-
     <div class="timedate">
-        <p id="datetime"></p>
+        <p id="datetime" style="background: black;
+        color: white;
+        position: fixed;
+        width: 95%;
+        left: 0px;
+        bottom: -17px;
+        padding: 12px;"></p>
     </div>
 
     <div class="container">
@@ -221,18 +162,18 @@
         <section id="about" class="timetable">
             <h2>Time Table</h2>
             <div class="section-title"></div>
-            <p><strong style="color: #ff00ff;    font-size: 23px;">Monday</strong><br><br>
+            <p><strong style="color: #000000;    font-size: 23px;">Monday</strong><br><br>
                 <p><strong>09:00 - 10:55 am </strong>- Big Data Lab<br> (V102)<br>
                     <p><strong>02:00 - 03:55 pm </strong>- Big Data<br> (S204)<br>
                     <p><strong>04:00 - 05:30 pm </strong>- Information Retrieval<br> (S305)
             </p>
             <div class="section-title"></div>
-            <p><strong style="color: #ff00ff;    font-size: 23px;">Tuesday</strong><br><br>
+            <p><strong style="color: #000000;    font-size: 23px;">Tuesday</strong><br><br>
                 <p><strong>09:00 - 10:55 am</strong> - Information Retrieval Lab<br> (V602)<br>
                     <p><strong>02:00 - 03:55 pm</strong> - Information Retrieval<br> (S305)
             </p>
             <div class="section-title"></div>
-            <p><strong style="color: #ff00ff;    font-size: 23px;">Wednesday</strong><br><br>
+            <p><strong style="color: #000000;    font-size: 23px;">Wednesday</strong><br><br>
                 <p><strong>11:00 - 11:55 am</strong> - Big Data <br>(S204)
             </p>
             <div class="section-title"></div>
@@ -242,7 +183,7 @@
             <h2>Mess Menu</h2>
             <div class="section-title"></div>
             <h5>Monday</h5>
-            <p><strong>BREAKFAST (7:30 am - 9:00 am)</strong></p>
+            <p>BR<strong>EAKFAST (7:30 am - 9:00 am)</strong></p>
             <p>Idly, Peanut Chutney, Sambar, Boiled egg, Bread, Butter, Jam, Tea, Coffee, Milk</p>
             <p><strong>LUNCH (12:00 pm - 2:00 pm)</strong></p>
             <p>Phulka, Channa Masala, White Rice, Tomato Drumstick/Cauliflower Curry, Pappucharu, Curd, Roti Chutney, Green salad</p>
